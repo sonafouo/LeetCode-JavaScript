@@ -17,3 +17,19 @@ var reverse = function(x) {
     if (x < 0) revX = -revX;
     return revX;
 };
+
+//solution 2
+
+let reverseInteger = (integerN) => {
+    let reversedInteger = 0;
+    while (integerN !== 0) {
+        reversedInteger = reversedInteger * 10 + integerN % 10;
+        integerN = Math.floor(integerN / 10);
+    }
+    return reversedInteger;
+}
+
+reverseInteger(1234567890);
+reverse(1234567890);
+
+ 
